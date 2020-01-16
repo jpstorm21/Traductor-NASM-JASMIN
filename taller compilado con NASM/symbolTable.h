@@ -1,0 +1,14 @@
+void error(char msg[]);
+void pushPilaSymbol(char nomID[], char type);
+void addStringtoSymbol(char nomID[]);
+int buscarSymbol(char text[]);
+void updateString(int pos);
+int findString(char text[]);
+void addEntireString(char id[], char val[]);
+char buscarTipo(int pos);
+void RetenedorI(int i);
+void RetenedorS(char s[]);
+int getRetenedorI();
+char getRetenedorS();
+char pilaInfo[1000][32];
+void printTable();

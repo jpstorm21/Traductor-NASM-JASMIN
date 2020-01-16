@@ -1,0 +1,30 @@
+INICIO_JMERY
+  STRINGJMERY fibo, valores, fin;
+  INTJMERY veces;
+  INTJMERY i, contador, fib1, fib2, aux;
+{
+  veces = 10 ;
+  i = 0 ;
+  contador = 1 ;
+  fib1 = 1 ;
+  fib2 = 0 ;
+  aux = 0 ;
+  fibo= "fibonacci:";
+  valores= "valor:";
+  fin= "Programa terminado";
+  ITERA<< i < veces>> {
+    aux = fib1 + fib2;
+    fib2 = fib1;
+    fib1 = aux;
+    imprimeString<<fibo>>
+    imprimeInt<<contador>>
+    imprimeString<<valores>>
+    imprimeInt<<aux>>
+    contador = contador + 1;
+    i = i + 1;
+  }
+  JMERY_IF<<i==veces>>{
+
+   imprimeString<<fin>>
+  }
+}FIN_JMERY

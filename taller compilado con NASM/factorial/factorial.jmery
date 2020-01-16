@@ -1,0 +1,10 @@
+INICIO_jmery {
+	10 intJmery numero;
+	1  intJmery factorial;
+	10 intJmery aux;
+	itera(numero){
+		factorial= factorial * aux;
+		aux = aux -1;
+	}
+	imprimir("factorialDeDiez%i",factorial);
+} FIN_jmery

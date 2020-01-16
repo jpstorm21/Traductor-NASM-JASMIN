@@ -1,0 +1,18 @@
+INICIO_JMERY
+
+INTJMERY n, d, c, r;
+
+{
+n=29;
+d=5;
+c=0;
+r=n - d;
+
+ ITERA<<r >0>>{
+ c=c+1;
+ n=n-d;
+ r=n-d;
+ }
+ imprimeInt<<c>>
+ imprimeInt<<n>>
+ }FIN_JMERY

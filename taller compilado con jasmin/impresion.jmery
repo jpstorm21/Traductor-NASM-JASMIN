@@ -1,0 +1,6 @@
+INICIO_JMERY
+  STRINGJMERY str
+{
+  str = "hola mundo"
+  imprimeString(str)
+}FIN_JMERY

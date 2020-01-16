@@ -1,0 +1,8 @@
+INICIO_jmery {
+	jmeryIF(1){
+        imprimir("debeimprimirse");	
+	}
+	jmeryIF(0){
+	    imprimir("nodebeimprimirse");
+	}
+} FIN_jmery

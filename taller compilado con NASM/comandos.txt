@@ -1,0 +1,13 @@
+bison -v -y -d gopizza.y
+flex gopizza.l
+gcc -c y.tab.c lex.yy.c assembler.c symbolTable.c
+gcc y.tab.o lex.yy.o assembler.o symbolTable.o -o GoPizza
+erase -f y.tab.h y.tab.c lex.yy.c y.output *.o
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+GoPizza <fibonacci.gopizza> fibonacci.asm
+NASM -f win32 fibonacci.asm -o fibonaccci.o
+GCC fibonaccci.o -o fibonaccci.exe
+erase -f fibonaccci.o
+fibonaccci

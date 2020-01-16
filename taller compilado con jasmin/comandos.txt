@@ -1,0 +1,8 @@
+cd C:\Users\maick\Documents\jmery++ (definitivo)
+bison -d jmery.y
+flex jmery.l
+gcc jmery.tab.c lex.yy.c symbolTable.c node.c assembler.c
+a.exe fibonacci.jmery fibonacci
+
+java -jar jasmin.jar fibonacci.j
+java fibonacci

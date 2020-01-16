@@ -1,0 +1,16 @@
+INICIO_jmery {
+	10 intJmery veces;
+	1 intJmery cont;
+	1 intJmery fib1;
+	0 intJmery fib2;
+	0 intJmery res;
+	itera(veces){
+		res=fib1 + fib2;
+		fib2 = fib1;
+		fib1 = res;
+		imprimir("Fibonacci%i",cont);
+		imprimir("Valor%i",res);
+		cont = cont + 1;
+	}
+	
+} FIN_jmery

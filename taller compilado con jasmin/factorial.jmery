@@ -1,0 +1,20 @@
+INICIO_JMERY 
+ INTJMERY i; 
+ INTJMERY numero;
+ INTJMERY factorial, aux;
+ STRINGJMERY impresion;
+
+{       
+        impresion= "El factorial de 10 es:";
+        i=0;
+	numero =10;
+ 	factorial=1;
+        aux=10;
+	ITERA<<i<numero>>{
+		factorial= factorial * aux;
+		aux = aux -1;
+                i= i + 1;
+	} 
+        imprimeString<<impresion>>
+	imprimeInt<<factorial>>
+} FIN_JMERY
